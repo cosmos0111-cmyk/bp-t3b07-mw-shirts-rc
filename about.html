@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <meta name="description" content="망원 셔츠룸 정보, 가격부터 라인업까지 전격 공개. 010-6279-0862. 망원에서 가장 빡센 셔츠룸, 숨기는 거 없이 다 깐다.">
+    <meta name="keywords" content="망원 셔츠룸 정보, 망원 셔츠룸 가격, 망원 셔츠룸 시스템, 망원 셔츠룸 라인업, 망원 셔츠룸 위치, 망원역 셔츠룸, 망원동 셔츠룸">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b07-mw-shirts-rc.vercel.app/info">
+    <meta property="og:title" content="망원 셔츠룸 정보 - 다 까발림 | 산성 옐로우">
+    <meta property="og:description" content="망원 셔츠룸 끝판왕. 가격, 시스템, 라인업. 숨기는 거 1도 없다.">
+    <title>망원 셔츠룸 정보 - 가격 / 라인업 / 시스템 | 산성 옐로우</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Courier New', Courier, monospace; 
+            background: #1a1a1a; 
+            color: #f5f5f5; 
+            line-height: 1.2;
+        }
+        h1, h2, h3, h4, p, blockquote, ul, ol, nav, section, header, footer {
+            margin-bottom: 1.5rem;
+        }
+        section { 
+            padding: 2rem 1.5rem; 
+            border-bottom: 4px solid #e6e600;
+        }
+        section:nth-child(odd) { 
+            background: #222; 
+            border-left: 8px solid #e6e600;
+        }
+        section:nth-child(even) { 
+            background: #2a2a2a; 
+            border-right: 8px solid #e6e600;
+        }
+        main { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 1rem;
+        }
+        h1 { 
+            font-size: clamp(2.5rem, 8vw, 5rem); 
+            font-weight: 900; 
+            text-transform: uppercase; 
+            letter-spacing: -3px; 
+            color: #e6e600; 
+            text-shadow: 4px 4px 0 #000;
+            line-height: 0.9;
+        }
+        h2 { 
+            font-size: clamp(1.8rem, 5vw, 3rem); 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: -2px; 
+            border-bottom: 3px solid #e6e600;
+            display: inline-block;
+        }
+        h3 { 
+            font-size: clamp(1.2rem, 3vw, 2rem); 
+            font-weight: 700; 
+            text-transform: uppercase;
+        }
+        p { 
+            font-size: 1.1rem; 
+            margin-bottom: 1rem;
+            word-break: break-all;
+        }
+        a { 
+            color: #e6e600; 
+            text-decoration: underline; 
+            text-underline-offset: 4px;
+            font-weight: bold;
+        }
+        a:hover { 
+            color: #fff; 
+            background: #e6e600;
+        }
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 1rem 1.5rem; 
+            background: #111; 
+            border-bottom: 4px solid #e6e600;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a { 
+            color: #e6e600; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 1.2rem; 
+            text-transform: uppercase;
+        }
+        .hamburger-menu { 
+            display: none; 
+            background: none; 
+            border: 2px solid #e6e600; 
+            color: #e6e600; 
+            padding: 0.5rem 1rem; 
+            font-size: 1.5rem; 
+            cursor: pointer;
+        }
+        .tel-link { 
+            display: inline-block; 
+            background: #e6e600; 
+            color: #111 !important; 
+            padding: 0.5rem 1.5rem; 
+            font-weight: 900; 
+            font-size: 1.3rem; 
+            text-decoration: none; 
+            border: 2px solid #fff;
+        }
+        .tel-link:hover { 
+            background: #fff; 
+            color: #111 !important;
+        }
+        ul, ol { 
+            padding-left: 1.5rem; 
+            margin-bottom: 1.5rem;
+        }
+        li { 
+            margin-bottom: 0.5rem; 
+            font-size: 1.1rem;
+        }
+        blockquote { 
+            border-left: 6px solid #e6e600; 
+            padding-left: 1.5rem; 
+            font-style: italic; 
+            font-size: 1.3rem; 
+            margin: 2rem 0;
+        }
+        @media (max-width: 768px) {
+            .hamburger-menu { display: block; }
+            nav { flex-wrap: wrap; }
+            nav a:not(.tel-link) { display: none; width: 100%; margin: 0.3rem 0; }
+            nav.open a:not(.tel-link) { display: block; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">망원셔츠룸</a>
+        <a href="/info">정보</a>
+        <a href="/price">가격</a>
+        <a href="/review">후기</a>
+        <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+        <button class="hamburger-menu" onclick="this.parentElement.classList.toggle('open')">☰</button>
+    </nav>
+
+    <main>
+        <section>
+            <h1>망원 셔츠룸<br>진짜 정보</h1>
+            <p>거품 다 빼고 팩트만 던진다. 망원에서 가장 하드한 셔츠룸, 시스템부터 라인업까지 다 까발림.</p>
+            <blockquote>“여긴 가짜 정보 없어. 직접 겪고 말하는 거다.”</blockquote>
+        </section>
+
+        <section>
+            <h2>📍 위치 & 접근성</h2>
+            <p>망원역 1번 출구에서 도보 3분. 골목 안쪽 2층 건물, 간판 없음. 아는 사람만 찾아온다.</p>
+            <p>네비 찍어도 안 나옴. 도착하면 전화해라. 010-6279-0862</p>
+        </section>
+
+        <section>
+            <h2>⏰ 운영 시간</h2>
+            <p>오후 8시 ~ 새벽 4시 (주말 새벽 6시까지)</p>
+            <p>연중무휴. 명절에도 문 연다. 진짜 하드한 놈들은 쉬지 않는다.</p>
+        </section>
+
+        <section>
+            <h2>💸 가격 시스템</h2>
+            <ul>
+                <li>입장료: 10만원 (1시간 기준, 기본주류 1잔 포함)</li>
+                <li>연장: 30분당 5만원</li>
+                <li>VIP 룸: 2시간 30만원 (샴페인 1병 + 안주)</li>
+                <li>※ 모든 가격은 현장 결제 기준. 카드 가능.</li>
+            </ul>
+            <p>더 자세한 가격표는 <a href="/price">여기</a>.</p>
+        </section>
+
+        <section>
+            <h2>👩 라인업 정보</h2>
+            <p>매일 20명 이상 상주. 주말엔 30명까지.</p>
+            <p>타입: 슬림, 볼륨, 청순, 섹시 — 골라먹는 재미</p>
+            <p>실사 프로필 제공. 가짜 사진 NO. 직접 보고 고를 수 있음.</p>
+            <p>라인업은 매일 오후 7시 업데이트. 인기 많은 애들은 예약 필수.</p>
+        </section>
+
+        <section>
+            <h2>🔞 시스템 & 룰</h2>
+            <ul>
+                <li>입장 시 신분증 검사 (미성년자 절대 입장 불가)</li>
+                <li>내부 촬영 금지 (들키면 바로 퇴장)</li>
+                <li>매니저와의 신체 접촉은 합의 하에 가능 (강제 절대 금지)</li>
+                <li>환불 불가. 대신 다른 매니저로 교체 가능 (1회)</li>
+                <li>술 강요 없음. 알아서 즐겨라.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>❓ 자주 묻는 질문</h2>
+            <h3>Q. 예약 필수인가요?</h3>
+            <p>A. 워크인 가능. 근데 주말엔 예약 안 하면 1~2시간 기다려야 함. 전화해라.</p>
+
+            <h3>Q. 여성 혼자 와도 되나요?</h3>
+            <p>A. 가능. 여성 손님도 있음. 분위기 편하게 즐겨라.</p>
+
+            <h3>Q. 외국인도 가능?</h3>
+            <p>A. 가능. 한국어 or 영어 가능. 신분증 필수.</p>
+
+            <h3>Q. 주차는?</h3>
+            <p>A. 건물 뒤 공영주차장 있음. 2시간 무료.</p>
+        </section>
+
+        <section>
+            <h2>📞 연락처</h2>
+            <p>전화: <a href="tel:01062790862" class="tel-link">010-6279-0862</a></p>
+            <p>문자/카톡 환영. 예약, 문의, 가격 확인 다 여기로.</p>
+            <p>야간에도 받음. 새벽 2시까지 전화 가능.</p>
+        </section>
+
+        <footer style="padding: 2rem 1.5rem; text-align: center; border-top: 4px solid #e6e600;">
+            <p>© 망원 셔츠룸 | 진짜를 원하면 여기로</p>
+            <p>모든 정보는 실제 운영 기준. 궁금하면 전화해라.</p>
+        </footer>
+    </main>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            if (link.href === window.location.href) {
+                link.style.textDecoration = 'underline';
+                link.style.textUnderlineOffset = '4px';
+            }
+        });
+    </script>
+</body>
+</html>
